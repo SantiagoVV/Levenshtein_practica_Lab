@@ -1,7 +1,15 @@
 language: java
+dist: trusty
 jdk:
   - oraclejdk8
   - oraclejdk9
   - openjdk8
   
 mvn javadoc:javadoc
+
+before_install:
+    - sudo apt-get update
+    - sudo apt-get install doxygen
+    
+    
+mvn doxygen:generate
