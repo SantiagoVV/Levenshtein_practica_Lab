@@ -3,6 +3,5 @@ jdk:
   - oraclejdk8
   - oraclejdk9
   - openjdk8
-
-mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  
 mvn javadoc:javadoc
